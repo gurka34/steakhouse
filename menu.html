@@ -1,0 +1,362 @@
+<html lang="tr">
+<head>
+    <title>Gürkankalınmenu</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+ 
+        html{
+            font-size:62.5%;/*1rem = 10px*/
+        }
+ 
+        body,h1,h2,ul{
+            margin:0;
+            padding:0;
+            
+        }
+        ul{
+            list-style: none;
+        }
+ 
+        /*******************/
+        body{
+		color:white;
+			background-color: #6B7F86;
+            font-family: 'Nunito Sans', sans-serif;
+        }
+        .arkaplan{
+            background-color: #25373D;
+        }
+        .kapsayici{
+            width: 960px;
+            margin:0 auto;
+        }
+        
+        .ust{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 200px;
+        }
+ 
+        .ust .logo{
+            text-align: center;
+            color:#fff;
+        }
+        .ust .logo h1{
+            font-size:4rem;
+            letter-spacing: .5rem;
+        }
+ 
+        .ust .logo h1::first-letter{
+            color:#FCB941;
+        }
+ 
+        
+ 
+        .ust .logo h2{
+            font-size:20px;
+        }
+ 
+        .ust .menu ul{
+            display: flex;
+        }
+        .ust .menu ul li{
+            margin:0 1rem;
+			
+        }
+ 
+        .ust .menu ul a{
+            color:#fff;
+            text-decoration: none;
+            font-size:1.8rem;
+            padding:0 2rem;
+			
+        }
+        .ust .menu ul a:hover{
+            color:#FCB941;
+			
+        }
+ 
+        .orta .bolum1{
+            margin-top:20px;
+            border:10px solid #25373D;
+            padding:20px;
+			
+        }
+ 
+        .orta .bolum1 img{
+            display: block;
+            width: 900px;
+			height:400px;
+			
+			
+        }
+ 
+        .orta .bolum2{
+            margin-top:20px;
+            display: flex;
+            justify-content: space-between;
+			
+        }
+        .orta .bolum2 .kutu{
+            flex-basis: 290px;
+			
+        }
+ 
+        .orta .bolum2 .kutu h2{
+            font-size: 2rem;
+			
+        }
+ 
+        .orta .bolum2 .kutu p{
+            font-size: 1.6rem;
+			
+        }
+ 
+        .orta .bolum3{
+            display: flex;
+            justify-content: space-between;
+            gap:20px;
+        }
+ 
+        .orta .bolum3 h1{
+            font-size:2.5rem;
+        }
+ 
+        .orta .bolum3 p{
+            font-size:1.6rem;
+        }
+ 
+        .alt{
+            margin-top:20px;
+            padding:20px 0;
+            display: flex;
+            gap:20px;
+        }
+        .alt .baglanti{
+            flex-grow: 1;
+        }
+ 
+        .alt .baglanti ul li{
+            border-bottom:dotted 1px #FCB941;
+            margin:5px 0;
+        }
+ 
+        .alt .baglanti a{
+            font-size:1.6rem;
+            text-decoration: none;
+            color:#FCB941;
+        }
+ 
+ 
+        .cizgi{
+            border-top:dotted 1px #FCB941;
+            margin:20px 0;
+        }
+ 
+        .alt-kenar-10{
+            border-bottom:10px solid #FCB941;
+        }
+		
+		footer {
+    font-size:15px;
+    color:white;
+    text-align:center;
+    clear:both;
+    padding:5px;	 	 
+}
+        
+	.aw-slider
+{
+  width:900px;
+  height:400px;
+  overflow: hidden;
+  position: relative;
+}
+.anasayfa-1, .anasayfa-2, .anasayfa-3, .anasayfa-4
+{
+  position: absolute;
+  width:900px;
+  height:330px;
+}
+ 
+.aw-slider > div > a > span{
+  position:absolute;
+  display:table;
+  background-color:black;
+  color:white;
+  right:0;
+  bottom:0;
+  padding:5px 10px;
+}
+.anasayfa-1{left: 0;}
+.anasayfa-2{left: 900px;}
+.anasayfa-3{left: 1800px;}
+.anasayfa-4{left: 2700px;}
+.aw-slider > div
+{
+  width: 2700px;
+  height: 330px;
+  left:0px;
+  position: absolute;
+  -webkit-animation-duration: 20s;
+  -webkit-animation-iteration-count:infinite;
+  -webkit-animation-name: gecisler;
+  -moz-animation-duration: 20s;
+  -moz-animation-iteration-count:infinite;
+  -moz-animation-name: gecisler;
+  -ms-animation-duration: 20s;
+  -ms-animation-iteration-count:infinite;
+  -ms-animation-name: gecisler;
+  animation-duration: 20s;
+  animation-iteration-count:infinite;
+  animation-name: gecisler;
+}
+
+@-webkit-keyframes gecisler
+{
+  0% {left:0px;}
+  10% {left:0px;}
+  20% {left:-900px;}
+  30% {left:-900px;}
+  40% {left:-1800px;}
+  50% {left:-1800px;}
+  60% {left:-2700px;}
+  70% {left:-2700px;}
+  80% {left:-3200px;}
+  90% {left:-3200px;}
+}
+@-moz-keyframes gecisler
+{
+ 0% {left:0px;}
+  10% {left:0px;}
+  20% {left:-900px;}
+  30% {left:-900px;}
+  40% {left:-1800px;}
+  50% {left:-1800px;}
+  60% {left:-2700px;}
+  70% {left:-2700px;}
+  80% {left:-3200px;}
+  90% {left:-3200px;}
+}
+@-ms-keyframes gecisler
+{
+ 0% {left:0px;}
+  10% {left:0px;}
+  20% {left:-900px;}
+  30% {left:-900px;}
+  40% {left:-1800px;}
+  50% {left:-1800px;}
+  60% {left:-2700px;}
+  70% {left:-2700px;}
+  80% {left:-3200px;}
+  90% {left:-3200px;}
+}
+@keyframes gecisler
+{
+  0% {left:0px;}
+  10% {left:0px;}
+  20% {left:-900px;}
+  30% {left:-900px;}
+  40% {left:-1800px;}
+  50% {left:-1800px;}
+  60% {left:-2700px;}
+  70% {left:-2700px;}
+  80% {left:-3200px;}
+  90% {left:-3200px;}
+}
+
+
+
+
+
+    </style>
+</head>
+<body>
+ 
+    <!-- sayfa üstü-->
+    <div class="arkaplan alt-kenar-10">
+        <div class="ust kapsayici">
+            <div class="logo">
+                <h1>GRKN</h1>
+                <h2>S T E A K  H O U S E</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                     <li><a href="anasayfa.html">Ana Sayfa</a></li>
+                    <li><a href="menu.html">Menü</a></li>
+                    <li><a href="restorantlar.html">Restoranlar</a></li>
+                    <li><a href="ıletısım.html">İletişim</a></li>
+                    <li><a href="rezervasyon.html">Rezervasyon</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+	  <div class="orta kapsayici">
+   <div class="bolum1">
+           <div class="aw-slider">
+<div>
+<a class="anasayfa-1"><img src="anasayfa-1.jpg"></a>
+<a class="anasayfa-2"><img src="anasayfa-2.jpg"></a>
+<a class="anasayfa-3"><img src="anasayfa-3.jpg"></a>
+<a class="anasayfa-4"><img src="anasayfa-4.jpg"></a>
+
+</div>
+</div>
+        </div>
+    <!-- sayfa ortası-->
+    <div class="orta kapsayici">
+	
+
+        
+        <div class="bolum2">
+            <div class="kutu">
+                <img src="yemek-1.jfif" alt=""><br><br>
+                <h2><font color="orange">LOKUM ET</font></h2>
+                <p>Dana lokum dananın sırt kısmından elde edilen yumuşak bir et çeşidi olarak sizlere servis edilir. Bonfile, sinir ve yağ gibi detaylar içermeyen lezzetli ve kemiksiz bir ettir. Dana lokum da bonfilenin en değerli, yumuşak ve lezzetli orta kısmıdır.</p>
+            </div>
+			 <div class="kutu"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <img src="yemek-2.jfif" alt=""><br><br>
+                <h2><font color="orange">DİNLENMİŞ MARİNE BİFTEK</font></h2>
+                <p>Dananın arka sırt kısmında yer alan bölgeden çıkarılan bonfile, dananın en yumuşak bölgesidir. Yağsız et yemeyi tercih edenler için en uygun seçim bonfiledir. </p>
+            </div>
+			 <div class="kutu">
+                <img src="yemek-3.jfif" alt=""><br><br>
+                <h2><font color="orange">SPESİYAL KÖFTE</font></h2>
+                <p>Et köfte en lezzetli köftelerin başında gelir. Et köfte mangal olarak genellikle yapılsa da, tavada, ızgarada,  ya da fırında da yapılan et köfte çeşitleri mevcuttur.</p>
+            </div>
+            <div class="kutu"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <img src="yemek-4.jfif" alt=""><br><br>
+                <h2><font color="orange">GRKN HAMBURGER</font></h2>
+                <p>Hamburger veya sadece Burger, iki dilim yuvarlak sandviç ekmeği arasına yerleştirilen bir köfte, Amerikan peyniri, marul yapılan sandviç türü. Genellikle ketçap, mayonez, turşu, soğan, domates, hardal ve bunun gibi değişik malzemelerin de ilavesi ile servis edilir. </p>
+            </div>
+          
+ 
+ 
+        </div>
+        <div class="cizgi"></div>
+        <div class="bolum3">
+            <div class="icerik">
+                <h1><font color="orange">GÜRKAN STEAK HOUSE</font></h1>
+                <p>Dünya standartlarında hizmet anlayışıyla 2014 yılında yola çıkan Gürkan Şef, bu coğrafyadan çıkıp, bu coğrafyanın insanı, kültürü, beğenileri üzerine kafa yoran bir et ustası olarak adından söz ettiriyor. Lezzeti ve sunumuyla ete bambaşka bir tarz getiren Gürkan Şef, hayata geçirdiği her projeden başarıyla çıkmaya devam ediyor. </p>
+            </div>
+            <div class="gorsel">
+                <img src="nisantas.jpg" alt="İlgili ürün bilgisi">
+            </div>
+        </div>
+    </div>
+ </div>
+    <!-- sayfa altı-->
+    <div class="arkaplan">
+        <div class="alt kapsayici">
+            <footer> <!--Footer bölümünü oluşturduk-->
+Copyright © 2022 | Gürkankalın.COM | Tüm Hakları Saklıdır.
+</footer>
+        </div>
+    </div>
+    
+</body>
+</html>
